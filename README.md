@@ -8,6 +8,7 @@ This is a simple calculator app programmed to demonstrate that many functions ca
 - originally made using "for i in range(b):", later changed to the current system as using range() in this program violates the spirit of the challenge
 - "if a == 0 or b == 0" saves time and power in cases such as (0,99999)
 ### Divide
+- still a work-in-progress
 ### Absolute and Invert
 - both are very similar, but the difference shows that the limitations
 - since absolute only has two possibilities, it doesn't need an elif or else, since the code returns before running the final line if non-negative and only uses the final line if negative
