@@ -15,13 +15,42 @@ def multiply(a, b):
             b += 1
         return result
 
-def divide(a, b): # WIP
-    result = 0
+def divide(a, b):
+    quotient = 0
+    negative = 0
+    # i/0 and 0/i catching
+    if b == 0:
+        return "Error: cannot divide by zero"
+    if a == 0:
+        return 0
+    # inverts and stores negatives (check README for explanation, this one is important)
+    if a < 0:
+        a = 0 - a
+        negative += 1
+    if b < 0:
+        b = 0 - b
+        negative -= 1
+    # larger denominator catching
+    if a < b:
+        if negative != 0:
+            a = invert(a)
+        return (f"{a}/{b}")
+    # main division loop
+    while a >= b:
+        a -= b
+        quotient += 1
+    # inverter
+    if negative != 0:
+        quotient = invert(quotient)
+    # results
+    if a != 0:
+        return (f"{quotient} {a}/{b}")
+    return quotient
+
+def invert(a):
+    return (0 - a)
 
 def absolute(a):
     if a >= 0:
         return a
-    return (0 - a)
-
-def invert(a):
-    return (0 - a)
+    return invert(a)
