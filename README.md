@@ -1,6 +1,15 @@
 ## Core Information
-
 This is a simple calculator app programmed to demonstrate that many functions can be done using only addition and subtraction. Yes, I could have made a calculator that multiplies and divides using built-in Python functions, but this project is meant to show an understanding of both Python and mathematics, as well as the ability to produce working products under a large constraint.
+
+
+## Guidelines
+Just a quick note, these guidelines may change over time
+- \+ and - allowed
+- == and != allowed
+- no * or /
+- no range()
+- no booleans that are declared to be booleans, i=0 and i!=0 allowed as stated previously
+- returns can be used to do math or run functions, but still must only contain code that follows all guidelines
 
 
 ## Notes
@@ -24,13 +33,3 @@ return result_2
 ### Invert and Absolute
 - the format of the final section of division was made here first, since both operate on the basis of "it either is this way or it isn't"
 - invert has shown itself to be incredibly usdeful in many other functions, saving a lot of time by skipping me writing out i = (0 - i) repeatedly
-
-
-## Guidelines
-Just a quick note, these guidelines may change over time
-- \+ and - allowed
-- == and != allowed
-- no * or /
-- no range()
-- no booleans that are declared to be booleans, i=0 and i!=0 allowed as stated previously
-- returns can be used to do math or run functions, but still must only contain code that follows all guidelines
