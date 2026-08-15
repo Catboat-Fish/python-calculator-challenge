@@ -1,11 +1,10 @@
 from functions import *
 
 
-print(absolute(4))
-print(absolute(-13))
-print(invert(0))
-print(invert(-7))
-print(invert(3))
+print(divide(13,6))
+print(divide(-9,6))
+print(divide(24,6))
+print(divide(0,3))
 
 
 # switch between != and == depending on testing mode
