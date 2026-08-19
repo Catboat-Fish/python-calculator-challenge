@@ -35,7 +35,7 @@ return result_2
 - invert has shown itself to be incredibly usdeful in many other functions, saving a lot of time by skipping me writing out i = (0 - i) repeatedly
 ### Power
 - can currently only do positive powers, but due to the way I wrote the multiplication code, it can do negative numbers to a positive power
-- "while b > 1" is used since unlike in multiplication, int result gets returned as "a", meaning it starts at "a" rather than at 0
+- "while b > 1" is used since unlike in multiplication, the result gets returned as "a", meaning it starts at "a" rather than at 0
 ### Tetration
 - still a work-in-progress
 - note to self: try using recursion
