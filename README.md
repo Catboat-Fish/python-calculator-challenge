@@ -33,3 +33,8 @@ return result_2
 ### Invert and Absolute
 - the format of the final section of division was made here first, since both operate on the basis of "it either is this way or it isn't"
 - invert has shown itself to be incredibly usdeful in many other functions, saving a lot of time by skipping me writing out i = (0 - i) repeatedly
+### Power
+- can currently only do positive powers, but due to the way I wrote the multiplication code, it can do negative numbers to a positive power
+### Tetration
+- still a work-in-progress
+- note to self: try using recursion

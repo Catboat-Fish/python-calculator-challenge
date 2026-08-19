@@ -54,3 +54,21 @@ def absolute(a):
     if a >= 0:
         return a
     return invert(a)
+
+def power(a, b):
+    # a^b
+    original = a
+    # if b is negative
+    if b < 0:
+        return "Error: this function can only do positive powers currently. Sorry about that."
+    # if b == 0
+    if b == 0:
+        return 1
+    # else
+    while b > 1:
+        a = multiply(a, original)
+        b -= 1
+    return a
+
+def tetrate(a, b):
+    pass
