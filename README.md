@@ -29,12 +29,13 @@ return result_2
 ### Divide
 - due to my limitation on booleans and wanting to create division that wasn't a clone of multiplication, I decided to create my own boolean using addition and subtraction for determining whether the result is positive or negative, with 0 meaning non-negative (False) and !=0 meaning negative (True)
 - since the remainder either is zero or isn't zero, it doesn't need an elif or else, since the code returns before running the final line if non-negative and only uses the final line if negative
-- negatives were easy to deal with due th the principle that a/-b == -a/b and -a/b == (-1)(a/b)
+- negatives were easy to deal with due to the principle that a/-b == -a/b and -a/b == (-1)(a/b)
 ### Invert and Absolute
 - the format of the final section of division was made here first, since both operate on the basis of "it either is this way or it isn't"
 - invert has shown itself to be incredibly usdeful in many other functions, saving a lot of time by skipping me writing out i = (0 - i) repeatedly
 ### Power
 - can currently only do positive powers, but due to the way I wrote the multiplication code, it can do negative numbers to a positive power
+- "while b > 1" is used since unlike in multiplication, int result gets returned as "a", meaning it starts at "a" rather than at 0
 ### Tetration
 - still a work-in-progress
 - note to self: try using recursion

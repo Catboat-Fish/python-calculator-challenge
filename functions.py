@@ -71,4 +71,5 @@ def power(a, b):
     return a
 
 def tetrate(a, b):
-    pass
+    # a tetrated to b
+    return "WIP"
