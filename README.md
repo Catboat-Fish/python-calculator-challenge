@@ -36,6 +36,19 @@ return result_2
 ### Power
 - can currently only do positive powers, but due to the way I wrote the multiplication code, it can do negative numbers to a positive power
 - "while b > 1" is used since unlike in multiplication, the result gets returned as "a", meaning it starts at "a" rather than at 0
+### Factorial
+- "result == 1" makes the first loop when a > 1 simply multiply a by 1
+- "multiply(result, a)" is used instead of "multiply(a, result)" since putting "result" first can potentially lead to massive amounts of addition in multiply(), more detail below
+```
+factorial(7)
+ |
+ v
+eventually
+multiply(result, a) -> multiply(2520, 2) -> 2520+2520 (1 add)
+or
+multiply(a, result) -> multiply(2, 2520) -> 2+2+2+...+2 (2519 adds)
+```
+- "while a > 1" saves one call over "while a > 1" which would have just ran multiply(result, 1)
 ### Tetration
 - still a work-in-progress
 - note to self: try using recursion

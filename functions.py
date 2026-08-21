@@ -70,6 +70,15 @@ def power(a, b):
         b -= 1
     return a
 
+def factorial(a):
+    result = 1
+    if a < 0:
+        return "Error: cannot be less than zero"
+    while a > 1:
+        result = multiply(result, a)
+        a -= 1
+    return result
+
 def tetrate(a, b):
     # a tetrated to b
     return "WIP"
